@@ -1,4 +1,4 @@
-package com.cilab.platform.util;
+package com.lnw.template.util;
 
 import java.io.File;
 import java.io.FileInputStream;

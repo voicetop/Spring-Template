@@ -1,4 +1,4 @@
-package com.cilab.platform.util;
+package com.lnw.template.util;
 
 import java.sql.Timestamp;
 import java.text.DecimalFormat;
