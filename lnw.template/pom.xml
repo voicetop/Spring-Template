@@ -127,6 +127,26 @@
 
 		<!-- add dependencies -->
 		
+		<!-- spring oxm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<dependency>
+		   <groupId>cglib</groupId>
+		   <artifactId>cglib-nodep</artifactId>
+		   <version>2.2.2</version>
+		</dependency>
+		
+		<!-- aspectj weaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
+		
 		<!-- spring-mvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -187,7 +207,15 @@
 	   		<version>5.1.25</version>
 	  	</dependency>
 	  	
-	  	 <!-- mybatis -->
+	  	<!-- maria driver -->
+	  	<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>1.1.7</version>
+		</dependency>
+			  	
+	  	
+	  	<!-- mybatis -->
 		<dependency>
 		    <groupId>org.mybatis</groupId>
 		    <artifactId>mybatis-spring</artifactId>

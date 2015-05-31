@@ -27,6 +27,6 @@
 		</constructor-arg>
 	</bean>
 	
-	<!-- <import resource="datasource.xml"/>
-	<import resource="mybatis.xml"/>  -->
+	<import resource="datasource.xml"/>
+	<import resource="mybatis.xml"/>
 </beans>

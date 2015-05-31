@@ -66,8 +66,6 @@
 		</beans:property>
 	</beans:bean>
 	
-	<!-- 
 	<beans:import resource="../tx.xml"/>
-	 -->
 	
 </beans:beans>
