@@ -1,0 +1,6 @@
+INDEX VERSION 1.3+/Users/cil/Documents/springTemplate/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3754971195.index
+2660920500.index
+3336859287.index
+159486809.index
+409224143.index

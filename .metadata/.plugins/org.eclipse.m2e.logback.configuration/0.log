@@ -1,0 +1,11 @@
+2015-05-31 14:45:50,893 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.lnw:template:1.0.0-BUILD-SNAPSHOT @ /Users/cil/Documents/springTemplate/lnw.template/pom.xml.
+2015-05-31 14:45:51,445 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.lnw:template:1.0.0-BUILD-SNAPSHOT @ /Users/cil/Documents/springTemplate/lnw.template/pom.xml.
+2015-05-31 14:45:54,485 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_KR actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-31 14:45:54,494 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-05-31 14:45:54,523 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_KR actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-31 14:45:54,524 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-05-31 14:45:55,793 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.lnw:template:1.0.0-BUILD-SNAPSHOT @ /Users/cil/Documents/springTemplate/lnw.template/pom.xml.
+2015-05-31 14:46:00,315 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_KR actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-31 14:46:00,327 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-05-31 14:46:00,330 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_KR actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-31 14:46:00,331 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
