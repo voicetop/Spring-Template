@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd"> 
+
+<mapper namespace="common">
+
+	<!-- Oracle 용 -->
+	<sql id="pagingHeaderSqlOracle">
+	 SELECT * FROM (
+			SELECT ROWNUM AS RNUM, A.* FROM (
+	</sql>
+	
+	<sql id="pagingFooterSqlOracle">
+	    	) A WHERE ROWNUM <![CDATA[ <= ]]> #{page} * #{pageSize}
+		) WHERE RNUM <![CDATA[ >= ]]> (#{page} - 1) * #{pageSize} + 1
+	</sql>
+	
+	<!-- MySQL용 -->
+	<sql id="pagingHeaderSqlMysql">
+	 SELECT C.* FROM (
+			SELECT @RNUM := @RNUM + 1 AS RNUM, A.* FROM (
+	</sql>
+	
+	<sql id="pagingFooterSqlMysql">
+	    	) A, ( SELECT @RNUM := 0 ) B
+		) C WHERE C.RNUM BETWEEN (#{page} - 1) * #{pageSize} + 1 AND #{page} * #{pageSize} 
+	</sql>
+	
+</mapper>

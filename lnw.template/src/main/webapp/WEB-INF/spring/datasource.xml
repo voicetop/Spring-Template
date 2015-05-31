@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="mySqlDataSource"/>
+    </bean>
+    
+	<bean id="mySqlDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://-url-:-port-/-databasename-?useUnicode=true&amp;characterEncoding=UTF-8"/>
+		<property name="username" value="earth"/>
+		<property name="password" value="cilab0715"/>
+		<property name="initialSize" value="10"/>
+		<property name="maxIdle" value="30"/>
+		<property name="maxActive" value="100"/>
+		<property name="poolPreparedStatements" value="true"/>
+		<property name="validationQuery" value="select 1"/>
+		<property name="testWhileIdle" value="true"/>
+		<property name="timeBetweenEvictionRunsMillis" value="60000"/>
+	</bean>
+	
+</beans>

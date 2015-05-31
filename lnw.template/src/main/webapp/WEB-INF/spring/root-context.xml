@@ -3,6 +3,30 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<!-- Root Context: defines shared resources visible to all other web components -->
-		
+	<!-- xml에서 config에 설정된 데이터를 ${}로 사용할수 있도록 -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="properties">
+            <bean class="org.springmodules.commons.configuration.CommonsConfigurationFactoryBean">
+               <property name="configurations">
+                    <list>
+                         <ref bean="rootConfig"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+	
+	<!-- 초기 환결 설정 값 로드(리로딩 불가) -->
+	<bean id="rootConfig" class="org.apache.commons.configuration.CompositeConfiguration">
+		<constructor-arg>
+			<list>
+				<bean class="org.apache.commons.configuration.XMLConfiguration" init-method="load">
+					<property name="URL" value="classpath:/config/root_config.xml" />
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<!-- <import resource="datasource.xml"/>
+	<import resource="mybatis.xml"/>  -->
 </beans>
